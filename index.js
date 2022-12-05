@@ -1,20 +1,20 @@
 "use strict";
 const todos = {
-    list: [],
+    _list: [],
     view() {
-        return this.list;
+        return this._list;
     },
     add(text) {
         const todo = {
             text,
             isComplete: false,
         };
-        this.list = [...this.list, todo];
+        this._list = [...this._list, todo];
         return todo;
     },
     delete(index) {
-        const todo = this.list[index];
-        this.list = [...this.list.slice(0, index), ...this.list.slice(index + 1)];
+        const todo = this._list[index];
+        this._list = [...this._list.slice(0, index), ...this._list.slice(index + 1)];
         return todo;
     },
 };
