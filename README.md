@@ -1,2 +1,2 @@
 # workspace
-A general personal workspace for learning and experimenting with code.
+My general personal workspace for learning and experimenting with code.
